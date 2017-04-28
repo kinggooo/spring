@@ -1,4 +1,4 @@
-package com.wangnz.springjava.ch2.soundsystem;
+package com.wangnz.java.ch2.soundsystem;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

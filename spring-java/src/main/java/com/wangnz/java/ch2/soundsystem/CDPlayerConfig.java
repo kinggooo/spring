@@ -1,8 +1,7 @@
-package com.wangnz.springjava.ch2.soundsystem;
+package com.wangnz.java.ch2.soundsystem;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
 @Configuration
 //@Import(CDConfig.class)
