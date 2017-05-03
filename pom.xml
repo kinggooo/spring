@@ -8,6 +8,7 @@
     <modules>
         <module>spring-java</module>
         <module>spring-mvc</module>
+        <module>spring-mvc-servlet3</module>
     </modules>
 
     <properties>

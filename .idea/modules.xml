@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring.iml" filepath="$PROJECT_DIR$/spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-java/spring-java.iml" filepath="$PROJECT_DIR$/spring-java/spring-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-servlet3/spring-mvc-servlet3.iml" filepath="$PROJECT_DIR$/spring-mvc-servlet3/spring-mvc-servlet3.iml" />
     </modules>
   </component>
 </project>
