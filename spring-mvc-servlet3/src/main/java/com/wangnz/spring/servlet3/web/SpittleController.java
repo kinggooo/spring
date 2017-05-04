@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Long.MAX_VALUE;
-
 
 @Controller
 @RequestMapping("/spittles")
@@ -41,6 +39,18 @@ public class SpittleController {
     public String test3(@PathVariable(value = "spittleId") long spittleId) {
         System.out.println(spittleId);
         return "spittles";
+    }
+
+    @RequestMapping(value = "/registIndex", method = RequestMethod.GET)
+    public String registIndex() {
+        return "registIndex";
+    }
+
+    @RequestMapping(value = "/registIndex", method = RequestMethod.POST)
+    public String doRegist(Spittle spittle) {
+        System.out.println(spittle.getId());
+        System.out.println(spittle.getMessage());
+        return "home";
     }
 
     private List<Spittle> createSpittleList(int count) {
