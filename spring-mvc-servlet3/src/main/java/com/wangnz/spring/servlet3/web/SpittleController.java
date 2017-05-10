@@ -50,7 +50,8 @@ public class SpittleController {
     public String doRegist(Spittle spittle) {
         System.out.println(spittle.getId());
         System.out.println(spittle.getMessage());
-        return "home";
+        return "redirect:/homePage/test1";
+        //return "home";
     }
 
     private List<Spittle> createSpittleList(int count) {

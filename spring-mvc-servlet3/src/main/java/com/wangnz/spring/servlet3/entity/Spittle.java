@@ -1,10 +1,13 @@
 package com.wangnz.spring.servlet3.entity;
 
+
+
 /**
  * Created by Administrator on 2017/5/3.
  */
 public class Spittle {
     private Long id;
+
     private String message;
 
     public Long getId() {
