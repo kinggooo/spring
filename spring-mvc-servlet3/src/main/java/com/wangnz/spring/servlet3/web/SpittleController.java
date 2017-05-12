@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,11 +48,15 @@ public class SpittleController {
     }
 
     @RequestMapping(value = "/registIndex", method = RequestMethod.POST)
-    public String doRegist(Spittle spittle) {
+    public String doRegist(Spittle spittle, Model model) {
         System.out.println(spittle.getId());
         System.out.println(spittle.getMessage());
-        return "redirect:/homePage/test1";
-        //return "home";
+//        ModelAndView mav = new ModelAndView("redirect:/homePage/test1");
+//        mav.addObject("id", spittle.getId());
+//        return mav;
+        model.addAttribute("myid", spittle.getId());
+        //return "redirect:/homePage/test1";
+        return "home";
     }
 
     private List<Spittle> createSpittleList(int count) {
