@@ -1,7 +1,7 @@
-package com.wangnz.spring.javaconf.web;
+package com.wangnz.spring.mvc.javaconf.web;
 
-import com.wangnz.spring.javaconf.entity.Spittle;
-import com.wangnz.spring.javaconf.service.SpittleService;
+import com.wangnz.spring.mvc.javaconf.entity.Spittle;
+import com.wangnz.spring.mvc.javaconf.service.SpittleService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,5 +1,6 @@
-package com.wangnz.spring.javaconf.web;
+package com.wangnz.spring.mvc.javaconf.web;
 
+import com.wangnz.spring.mvc.javaconf.web.HomeController;
 import org.junit.Test;
 import org.springframework.stereotype.Controller;
 import org.springframework.test.web.servlet.MockMvc;

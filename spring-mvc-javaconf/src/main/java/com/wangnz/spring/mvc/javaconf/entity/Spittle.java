@@ -1,4 +1,4 @@
-package com.wangnz.spring.javaconf.entity;
+package com.wangnz.spring.mvc.javaconf.entity;
 
 
 

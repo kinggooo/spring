@@ -1,4 +1,4 @@
-package com.wangnz.spring.javaconf.config;
+package com.wangnz.spring.mvc.javaconf.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,7 +19,7 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.wangnz.spring.javaconf")
+@ComponentScan("com.wangnz.spring.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
 //    @Bean
 //    public ViewResolver viewResolver() {

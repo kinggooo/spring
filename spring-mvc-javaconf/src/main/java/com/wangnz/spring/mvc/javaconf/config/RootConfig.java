@@ -1,4 +1,4 @@
-package com.wangnz.spring.javaconf.config;
+package com.wangnz.spring.mvc.javaconf.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

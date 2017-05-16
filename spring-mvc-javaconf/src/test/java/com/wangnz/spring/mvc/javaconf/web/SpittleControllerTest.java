@@ -1,4 +1,4 @@
-package com.wangnz.spring.javaconf.web;
+package com.wangnz.spring.mvc.javaconf.web;
 
 import org.springframework.stereotype.Controller;
 

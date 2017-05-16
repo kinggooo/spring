@@ -1,4 +1,4 @@
-package com.wangnz.spring.javaconf.constant;
+package com.wangnz.spring.mvc.javaconf.constant;
 
 /**
  * Created by Administrator on 2017/5/4.
