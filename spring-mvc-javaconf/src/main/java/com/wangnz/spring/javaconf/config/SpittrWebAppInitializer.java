@@ -1,4 +1,4 @@
-package com.wangnz.spring.servlet3.config;
+package com.wangnz.spring.javaconf.config;
 
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

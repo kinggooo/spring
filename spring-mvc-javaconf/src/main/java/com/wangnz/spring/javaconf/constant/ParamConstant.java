@@ -1,4 +1,4 @@
-package com.wangnz.spring.servlet3.constant;
+package com.wangnz.spring.javaconf.constant;
 
 /**
  * Created by Administrator on 2017/5/4.

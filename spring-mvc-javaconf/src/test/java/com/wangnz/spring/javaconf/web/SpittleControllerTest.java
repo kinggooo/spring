@@ -1,17 +1,8 @@
-package com.wangnz.spring.servlet3.web;
+package com.wangnz.spring.javaconf.web;
 
-import com.wangnz.spring.servlet3.entity.Spittle;
-import com.wangnz.spring.servlet3.service.SpittleService;
-import org.junit.Test;
 import org.springframework.stereotype.Controller;
-import org.springframework.test.web.servlet.MockMvc;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 @Controller
 public class SpittleControllerTest {

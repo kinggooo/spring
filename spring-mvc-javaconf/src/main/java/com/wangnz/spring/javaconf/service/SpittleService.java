@@ -1,6 +1,6 @@
-package com.wangnz.spring.servlet3.service;
+package com.wangnz.spring.javaconf.service;
 
-import com.wangnz.spring.servlet3.entity.Spittle;
+import com.wangnz.spring.javaconf.entity.Spittle;
 
 import java.util.List;
 

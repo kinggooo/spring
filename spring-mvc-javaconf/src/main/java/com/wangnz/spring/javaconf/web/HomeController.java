@@ -1,4 +1,4 @@
-package com.wangnz.spring.servlet3.web;
+package com.wangnz.spring.javaconf.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
