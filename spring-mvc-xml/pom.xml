@@ -7,7 +7,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-mvc</artifactId>
+    <artifactId>spring-mvc-xml</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
@@ -64,6 +64,6 @@
     </dependencies>
 
     <build>
-        <finalName>spring-mvc</finalName>
+        <finalName>spring-mvc-xml</finalName>
     </build>
 </project>

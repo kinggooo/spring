@@ -8,14 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-java" />
         <module name="spring-mvc" />
+        <module name="spring-mvc-javaconf" />
         <module name="spring-mvc-servlet3" />
+        <module name="spring-mvc-xml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring" target="1.5" />
       <module name="spring-java" target="1.5" />
       <module name="spring-mvc" target="1.5" />
+      <module name="spring-mvc-javaconf" target="1.7" />
       <module name="spring-mvc-servlet3" target="1.7" />
+      <module name="spring-mvc-xml" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

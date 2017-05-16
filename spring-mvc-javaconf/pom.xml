@@ -7,7 +7,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-mvc-servlet3</artifactId>
+    <artifactId>spring-mvc-javaconf</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
@@ -76,7 +76,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-mvc-servlet3</finalName>
+        <finalName>spring-mvc-javaconf</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
