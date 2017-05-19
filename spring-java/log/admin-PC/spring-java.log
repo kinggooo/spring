@@ -1,2 +1,6 @@
-20170510_10:09:57.258 [main] [   ] Loading XML bean definitions from class path resource [spring-srcanalyze.xml]
-20170510_16:52:12.985 [main] [   ] Loading XML bean definitions from class path resource [spring-srcanalyze.xml]
+20170518_14:35:14.231 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@43b34d17: startup date [Thu May 18 14:35:14 CST 2017]; root of context hierarchy
+20170518_14:35:14.309 [main] [   ] Loading XML bean definitions from class path resource [spring-audit.xml]
+20170518_15:20:27.243 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49606c14: startup date [Thu May 18 15:20:27 CST 2017]; root of context hierarchy
+20170518_15:20:27.283 [main] [   ] Loading XML bean definitions from class path resource [spring-audit.xml]
+20170518_15:20:36.753 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4564813b: startup date [Thu May 18 15:20:36 CST 2017]; root of context hierarchy
+20170518_15:20:36.785 [main] [   ] Loading XML bean definitions from class path resource [spring-audit.xml]
