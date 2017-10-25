@@ -1,0 +1,124 @@
+20171025_16:01:01.698 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d9c1743: startup date [Wed Oct 25 16:01:01 CST 2017]; root of context hierarchy
+20171025_16:01:01.729 [main] [   ] Loading XML bean definitions from class path resource [spring-quartz.xml]
+20171025_16:01:02.186 [main] [   ] Using default implementation for ThreadExecutor
+20171025_16:01:02.186 [main] [   ] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20171025_16:01:02.186 [main] [   ] Quartz Scheduler v.2.2.3 created.
+20171025_16:01:02.201 [main] [   ] RAMJobStore initialized.
+20171025_16:01:02.201 [main] [   ] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20171025_16:01:02.201 [main] [   ] Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+20171025_16:01:02.201 [main] [   ] Quartz scheduler version: 2.2.3
+20171025_16:01:02.201 [main] [   ] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5a716968
+20171025_16:01:02.264 [main] [   ] Starting beans in phase 2147483647
+20171025_16:01:02.264 [main] [   ] Starting Quartz Scheduler now
+20171025_16:01:02.264 [main] [   ] Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+20171025_16:08:22.492 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fd3297: startup date [Wed Oct 25 16:08:22 CST 2017]; root of context hierarchy
+20171025_16:08:22.530 [main] [   ] Loading XML bean definitions from class path resource [spring-quartz.xml]
+20171025_16:08:22.932 [main] [   ] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'firstComplexJobDetail' defined in class path resource [spring-quartz.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'jobClass'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.defonds.scheduler.jobs.FirstScheduledJob]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:835)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.wangnz.java.quartz.TestQuartz.main(TestQuartz.java:8)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'jobClass'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.defonds.scheduler.jobs.FirstScheduledJob]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:596)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:603)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	... 11 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Cannot find class [com.defonds.scheduler.jobs.FirstScheduledJob]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:287)
+	at org.springframework.beans.propertyeditors.ClassEditor.setAsText(ClassEditor.java:63)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:464)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:437)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:195)
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:576)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.defonds.scheduler.jobs.FirstScheduledJob
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:284)
+	... 22 common frames omitted
+20171025_16:09:16.676 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ffa6e43: startup date [Wed Oct 25 16:09:16 CST 2017]; root of context hierarchy
+20171025_16:09:16.712 [main] [   ] Loading XML bean definitions from class path resource [spring-quartz.xml]
+20171025_16:09:17.224 [main] [   ] Using default implementation for ThreadExecutor
+20171025_16:09:17.239 [main] [   ] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20171025_16:09:17.240 [main] [   ] Quartz Scheduler v.2.2.3 created.
+20171025_16:09:17.241 [main] [   ] RAMJobStore initialized.
+20171025_16:09:17.241 [main] [   ] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20171025_16:09:17.242 [main] [   ] Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+20171025_16:09:17.242 [main] [   ] Quartz scheduler version: 2.2.3
+20171025_16:09:17.243 [main] [   ] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1d1446b2
+20171025_16:09:17.295 [main] [   ] Starting beans in phase 2147483647
+20171025_16:09:17.296 [main] [   ] Starting Quartz Scheduler now
+20171025_16:09:17.296 [main] [   ] Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+20171025_16:10:46.719 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eebbe: startup date [Wed Oct 25 16:10:46 CST 2017]; root of context hierarchy
+20171025_16:10:46.756 [main] [   ] Loading XML bean definitions from class path resource [spring-quartz.xml]
+20171025_16:10:47.237 [main] [   ] Using default implementation for ThreadExecutor
+20171025_16:10:47.257 [main] [   ] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20171025_16:10:47.257 [main] [   ] Quartz Scheduler v.2.2.3 created.
+20171025_16:10:47.258 [main] [   ] RAMJobStore initialized.
+20171025_16:10:47.262 [main] [   ] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20171025_16:10:47.262 [main] [   ] Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+20171025_16:10:47.262 [main] [   ] Quartz scheduler version: 2.2.3
+20171025_16:10:47.263 [main] [   ] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e2ef2be
+20171025_16:10:47.311 [main] [   ] Starting beans in phase 2147483647
+20171025_16:10:47.311 [main] [   ] Starting Quartz Scheduler now
+20171025_16:10:47.315 [main] [   ] Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+20171025_16:11:18.430 [main] [   ] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eebbe: startup date [Wed Oct 25 16:11:18 CST 2017]; root of context hierarchy
+20171025_16:11:18.468 [main] [   ] Loading XML bean definitions from class path resource [spring-quartz.xml]
+20171025_16:11:18.998 [main] [   ] Using default implementation for ThreadExecutor
+20171025_16:11:19.011 [main] [   ] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20171025_16:11:19.012 [main] [   ] Quartz Scheduler v.2.2.3 created.
+20171025_16:11:19.012 [main] [   ] RAMJobStore initialized.
+20171025_16:11:19.013 [main] [   ] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20171025_16:11:19.013 [main] [   ] Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+20171025_16:11:19.013 [main] [   ] Quartz scheduler version: 2.2.3
+20171025_16:11:19.015 [main] [   ] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e2ef2be
+20171025_16:11:19.059 [main] [   ] Starting beans in phase 2147483647
+20171025_16:11:19.059 [main] [   ] Starting Quartz Scheduler now
+20171025_16:11:19.060 [main] [   ] Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
