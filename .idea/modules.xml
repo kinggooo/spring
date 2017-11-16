@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring.iml" filepath="$PROJECT_DIR$/spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-java/spring-java.iml" filepath="$PROJECT_DIR$/spring-java/spring-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc-javaconf/spring-mvc-javaconf.iml" filepath="$PROJECT_DIR$/spring-mvc-javaconf/spring-mvc-javaconf.iml" />
-      <module fileurl="file://D:\WNZ\workspace\IdeaProjects\spring\spring-mvc-javaconf\spring-mvc-servlet3.iml" filepath="D:\WNZ\workspace\IdeaProjects\spring\spring-mvc-javaconf\spring-mvc-servlet3.iml" />
+      <module fileurl="file://D:/WNZ/workspace/IdeaProjects/spring/spring-mvc-javaconf/spring-mvc-servlet3.iml" filepath="D:/WNZ/workspace/IdeaProjects/spring/spring-mvc-javaconf/spring-mvc-servlet3.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc-xml/spring-mvc-xml.iml" filepath="$PROJECT_DIR$/spring-mvc-xml/spring-mvc-xml.iml" />
     </modules>
   </component>
